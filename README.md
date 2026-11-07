@@ -33,7 +33,7 @@ GameController 将手柄分类为 Xbox One，而底层驱动名为 Xbox360Gamepa
 
 - macOS、Python 3.9 或更新版本、Xcode Command Line Tools（`xcode-select --install`）。
 - USB 数据线直连 Mac，保持供电稳定。关闭 OpenJoy 及其他手柄管理/升级工具。
-- 自行从厂商渠道取得对应官方固件。本仓库和 Release **不包含完整官方或改版固件**。
+- 从 [v2.0.0 Release](https://github.com/JairHan/beitong-kp20d-macos-xbox/releases/tag/v2.0.0) 下载独立附件 `KP20D-official-1.1.1.bin`，或自行从厂商渠道取得对应镜像。该附件是本次使用的未修改官方原件；源码仓库和工具压缩包不包含完整固件。
 - 官方镜像必须为 340302 字节，SHA256：
 
 ```text
@@ -47,7 +47,7 @@ GameController 将手柄分类为 Xbox One，而底层驱动名为 Xbox360Gamepa
 ```sh
 make
 mkdir -p firmware logs
-# 将自行取得的、哈希相符的官方固件放在：
+# 将下载或自行取得的、哈希相符的官方固件放在：
 # firmware/KP20D-official-1.1.1.bin
 python3 tools/build_firmware.py firmware/KP20D-official-1.1.1.bin --output firmware/KP20D-nativeXboxUSB-v2.bin
 ```
@@ -102,4 +102,4 @@ make test
 
 Release 提供Apple Silicon（arm64）原生库和源码工具压缩包；库的构建最低部署目标为 macOS 12.0，但仅在 macOS 27.3 实测；其他架构建议在本机运行 `make`。这些工具无需安装常驻服务。原生库未经过 Apple 公证。
 
-本项目自行编写的工具与文档采用 MIT 许可；厂商固件、商标和第三方逆向样本不在该许可范围内。本项目与北通、Microsoft、Apple 没有关联。
+本项目自行编写的工具与文档采用 MIT 许可；Release 中的厂商固件原件仅作为本型号的构建输入与恢复备份，版权归原权利人，不受本项目 MIT 许可授权；商标和第三方逆向样本亦不在该许可范围内。本项目与北通、Microsoft、Apple 没有关联。
