@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "hardware_access": false,
+  "exact_official_build_verified": true,
+  "patch_sha256": "b8f9a7e864b0750eda4ebb86af19b19d9a0c09f588ae5178cabc877b3f38857b",
+  "inverse_recovers_official_exactly": true,
+  "updater_image_validation_checked": true,
+  "corrupted_image_rejected": true,
+  "native_library_loads": true,
+  "synthetic_container_tests": 5,
+  "synthetic_transaction_scenarios": 8
+}

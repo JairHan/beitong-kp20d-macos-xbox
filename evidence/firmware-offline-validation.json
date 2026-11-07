@@ -1,0 +1,8531 @@
+{
+  "status": "offline_checks_passed",
+  "firmware_sha256": "b8f9a7e864b0750eda4ebb86af19b19d9a0c09f588ae5178cabc877b3f38857b",
+  "mode_cases": 384,
+  "descriptor_cases": [
+    {
+      "mode": 0,
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0,
+        "descriptor": "1201000200000040bc205851000101020001",
+        "descriptor_address": "0x801adb4"
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0,
+        "descriptor": "12010002000000405e048e02000101020001",
+        "descriptor_address": "0x801adb4"
+      }
+    },
+    {
+      "mode": 1,
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0,
+        "descriptor": "12011001000000407e050920000101020001",
+        "descriptor_address": "0x801aec6"
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0,
+        "descriptor": "12011001000000407e050920000101020001",
+        "descriptor_address": "0x801aec6"
+      }
+    },
+    {
+      "mode": 2,
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0,
+        "descriptor": "1201000200000040bc205851000101020001",
+        "descriptor_address": "0x801b178"
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0,
+        "descriptor": "1201000200000040bc205851000101020001",
+        "descriptor_address": "0x801b178"
+      }
+    },
+    {
+      "mode": 3,
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0,
+        "descriptor": "12010002ef0201407e056920000201020001",
+        "descriptor_address": "0x801b341"
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0,
+        "descriptor": "12010002ef0201407e056920000201020001",
+        "descriptor_address": "0x801b341"
+      }
+    }
+  ],
+  "instructions": [
+    {
+      "address": "0x80196da",
+      "bytes": "0120",
+      "assembly": "movs r0, #1"
+    },
+    {
+      "address": "0x80196dc",
+      "bytes": "84f85400",
+      "assembly": "strb.w r0, [r4, #0x54]"
+    },
+    {
+      "address": "0x80196e0",
+      "bytes": "70bd",
+      "assembly": "pop {r4, r5, r6, pc}"
+    },
+    {
+      "address": "0x80196e2",
+      "bytes": "00bf",
+      "assembly": "nop "
+    },
+    {
+      "address": "0x80196e4",
+      "bytes": "00bf",
+      "assembly": "nop "
+    },
+    {
+      "address": "0x80196e6",
+      "bytes": "00bf",
+      "assembly": "nop "
+    },
+    {
+      "address": "0x80196e8",
+      "bytes": "00bf",
+      "assembly": "nop "
+    }
+  ],
+  "byte_exact_official_restore": true,
+  "unicorn_version": "2.1.4",
+  "differences": [
+    {
+      "offset": "0xc",
+      "before": 42,
+      "after": 205
+    },
+    {
+      "offset": "0xd",
+      "before": 248,
+      "after": 153
+    },
+    {
+      "offset": "0x16",
+      "before": 67,
+      "after": 85
+    },
+    {
+      "offset": "0x17",
+      "before": 165,
+      "after": 141
+    },
+    {
+      "offset": "0x166fc",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "offset": "0x166fd",
+      "before": 240,
+      "after": 32
+    },
+    {
+      "offset": "0x166fe",
+      "before": 162,
+      "after": 132
+    },
+    {
+      "offset": "0x166ff",
+      "before": 254,
+      "after": 248
+    },
+    {
+      "offset": "0x16700",
+      "before": 64,
+      "after": 84
+    },
+    {
+      "offset": "0x16701",
+      "before": 242,
+      "after": 0
+    },
+    {
+      "offset": "0x16702",
+      "before": 220,
+      "after": 112
+    },
+    {
+      "offset": "0x16703",
+      "before": 81,
+      "after": 189
+    },
+    {
+      "offset": "0x16704",
+      "before": 136,
+      "after": 0
+    },
+    {
+      "offset": "0x16705",
+      "before": 66,
+      "after": 191
+    },
+    {
+      "offset": "0x16706",
+      "before": 248,
+      "after": 0
+    },
+    {
+      "offset": "0x16707",
+      "before": 211,
+      "after": 191
+    },
+    {
+      "offset": "0x16708",
+      "before": 3,
+      "after": 0
+    },
+    {
+      "offset": "0x16709",
+      "before": 32,
+      "after": 191
+    },
+    {
+      "offset": "0x1670a",
+      "before": 11,
+      "after": 0
+    },
+    {
+      "offset": "0x1670b",
+      "before": 224,
+      "after": 191
+    },
+    {
+      "offset": "0x17dde",
+      "before": 188,
+      "after": 94
+    },
+    {
+      "offset": "0x17ddf",
+      "before": 32,
+      "after": 4
+    },
+    {
+      "offset": "0x17de0",
+      "before": 88,
+      "after": 142
+    },
+    {
+      "offset": "0x17de1",
+      "before": 81,
+      "after": 2
+    }
+  ],
+  "limitations": [
+    "No hardware, USB stack, interrupts, flash, radio or whole-boot simulation.",
+    "Clock and mode-switch calls use controlled stubs.",
+    "Does not establish recovery after identity change or real native-driver compatibility."
+  ],
+  "cases": [
+    {
+      "input": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        0,
+        1499,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        0,
+        0,
+        1499,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        0,
+        1499,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        0,
+        1499,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        0,
+        1500,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        0,
+        0,
+        1500,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        0,
+        1500,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [
+          3
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        0,
+        1500,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [
+          3
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        0,
+        1999,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        0,
+        0,
+        1999,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        0,
+        1999,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [
+          3
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        0,
+        1999,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [
+          3
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        0,
+        2000,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        0,
+        0,
+        2000,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        0,
+        2000,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [
+          3
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        0,
+        2000,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [
+          3
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        0,
+        2999,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        0,
+        0,
+        2999,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        0,
+        2999,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [
+          3
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        0,
+        2999,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [
+          3
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        0,
+        3000,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        0,
+        0,
+        3000,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        0,
+        3000,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [
+          3
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        0,
+        3000,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [
+          3
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        0,
+        60000,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        0,
+        0,
+        60000,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        0,
+        60000,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [
+          3
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        0,
+        60000,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [
+          3
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        1,
+        1499,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        0,
+        1,
+        1499,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        1,
+        1499,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        1,
+        1499,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        1,
+        1500,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        0,
+        1,
+        1500,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        1,
+        1500,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [
+          3
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        1,
+        1500,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [
+          3
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        1,
+        1999,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        0,
+        1,
+        1999,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        1,
+        1999,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [
+          3
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        1,
+        1999,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [
+          3
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        1,
+        2000,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        0,
+        1,
+        2000,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        1,
+        2000,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [
+          3
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        1,
+        2000,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [
+          3
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        1,
+        2999,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        0,
+        1,
+        2999,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        1,
+        2999,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [
+          3
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        1,
+        2999,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [
+          3
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        1,
+        3000,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        0,
+        1,
+        3000,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        1,
+        3000,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [
+          3
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        1,
+        3000,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [
+          3
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        1,
+        60000,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        0,
+        1,
+        60000,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        1,
+        60000,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [
+          3
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        1,
+        60000,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [
+          3
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        5,
+        0,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        0,
+        5,
+        0,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        5,
+        0,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        5,
+        0,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        5,
+        1499,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        0,
+        5,
+        1499,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        5,
+        1499,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        5,
+        1499,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        5,
+        1500,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        0,
+        5,
+        1500,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        5,
+        1500,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [
+          3
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        5,
+        1500,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [
+          3
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        5,
+        1999,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        0,
+        5,
+        1999,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        5,
+        1999,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [
+          3
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        5,
+        1999,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [
+          3
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        5,
+        2000,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        0,
+        5,
+        2000,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        5,
+        2000,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [
+          3
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        5,
+        2000,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [
+          3
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        5,
+        2999,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        0,
+        5,
+        2999,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        5,
+        2999,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [
+          3
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        5,
+        2999,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [
+          3
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        5,
+        3000,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        0,
+        5,
+        3000,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        5,
+        3000,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [
+          3
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        5,
+        3000,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [
+          3
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        5,
+        60000,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        0,
+        5,
+        60000,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        5,
+        60000,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [
+          3
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        0,
+        5,
+        60000,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [
+          3
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        1,
+        0,
+        1499,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        1,
+        0,
+        1499,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        1,
+        0,
+        1499,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        1,
+        0,
+        1499,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        1,
+        0,
+        1500,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        1,
+        0,
+        1500,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        1,
+        0,
+        1500,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        1,
+        0,
+        1500,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        1,
+        0,
+        1999,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        1,
+        0,
+        1999,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        1,
+        0,
+        1999,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        1,
+        0,
+        1999,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        1,
+        0,
+        2000,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        1,
+        0,
+        2000,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        1,
+        0,
+        2000,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        1,
+        0,
+        2000,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        1,
+        0,
+        2999,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        1,
+        0,
+        2999,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        1,
+        0,
+        2999,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        1,
+        0,
+        2999,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        1,
+        0,
+        3000,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        1,
+        0,
+        3000,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        1,
+        0,
+        3000,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [
+          2
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [
+          2
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        1,
+        0,
+        3000,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [
+          2
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [
+          2
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        1,
+        0,
+        60000,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        1,
+        0,
+        60000,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        1,
+        0,
+        60000,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [
+          2
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [
+          2
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        1,
+        0,
+        60000,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [
+          2
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [
+          2
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        1,
+        1,
+        1499,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        1,
+        1,
+        1499,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        1,
+        1,
+        1499,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        1,
+        1,
+        1499,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        1,
+        1,
+        1500,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        1,
+        1,
+        1500,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        1,
+        1,
+        1500,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        1,
+        1,
+        1500,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        1,
+        1,
+        1999,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        1,
+        1,
+        1999,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        1,
+        1,
+        1999,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        1,
+        1,
+        1999,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        1,
+        1,
+        2000,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        1,
+        1,
+        2000,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        1,
+        1,
+        2000,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        1,
+        1,
+        2000,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        1,
+        1,
+        2999,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        1,
+        1,
+        2999,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        1,
+        1,
+        2999,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        1,
+        1,
+        2999,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        1,
+        1,
+        3000,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        1,
+        1,
+        3000,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        1,
+        1,
+        3000,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [
+          2
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [
+          2
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        1,
+        1,
+        3000,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [
+          2
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [
+          2
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        1,
+        1,
+        60000,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        1,
+        1,
+        60000,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        1,
+        1,
+        60000,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [
+          2
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [
+          2
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        1,
+        1,
+        60000,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [
+          2
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [
+          2
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        1,
+        5,
+        0,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        1,
+        5,
+        0,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        1,
+        5,
+        0,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        1,
+        5,
+        0,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        1,
+        5,
+        1499,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        1,
+        5,
+        1499,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        1,
+        5,
+        1499,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        1,
+        5,
+        1499,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        1,
+        5,
+        1500,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        1,
+        5,
+        1500,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        1,
+        5,
+        1500,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        1,
+        5,
+        1500,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        1,
+        5,
+        1999,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        1,
+        5,
+        1999,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        1,
+        5,
+        1999,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        1,
+        5,
+        1999,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        1,
+        5,
+        2000,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        1,
+        5,
+        2000,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        1,
+        5,
+        2000,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        1,
+        5,
+        2000,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        1,
+        5,
+        2999,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        1,
+        5,
+        2999,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        1,
+        5,
+        2999,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        1,
+        5,
+        2999,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        1,
+        5,
+        3000,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        1,
+        5,
+        3000,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        1,
+        5,
+        3000,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [
+          2
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [
+          2
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        1,
+        5,
+        3000,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [
+          2
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [
+          2
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        1,
+        5,
+        60000,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        1,
+        5,
+        60000,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        1,
+        5,
+        60000,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [
+          2
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [
+          2
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        1,
+        5,
+        60000,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [
+          2
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [
+          2
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        2,
+        0,
+        0,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        2,
+        0,
+        0,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        2,
+        0,
+        0,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        2,
+        0,
+        1499,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        2,
+        0,
+        1499,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        2,
+        0,
+        1499,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        2,
+        0,
+        1499,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        2,
+        0,
+        1500,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        2,
+        0,
+        1500,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        2,
+        0,
+        1500,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        2,
+        0,
+        1500,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        2,
+        0,
+        1999,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        2,
+        0,
+        1999,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        2,
+        0,
+        1999,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        2,
+        0,
+        1999,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        2,
+        0,
+        2000,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        2,
+        0,
+        2000,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        2,
+        0,
+        2000,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        2,
+        0,
+        2000,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        2,
+        0,
+        2999,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        2,
+        0,
+        2999,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        2,
+        0,
+        2999,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        2,
+        0,
+        2999,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        2,
+        0,
+        3000,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        2,
+        0,
+        3000,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        2,
+        0,
+        3000,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 1,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 1,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        2,
+        0,
+        3000,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 1,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 1,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        2,
+        0,
+        60000,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        2,
+        0,
+        60000,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        2,
+        0,
+        60000,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 1,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 1,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        2,
+        0,
+        60000,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 1,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 1,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        2,
+        1,
+        0,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        2,
+        1,
+        0,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        2,
+        1,
+        0,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        2,
+        1,
+        0,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        2,
+        1,
+        1499,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        2,
+        1,
+        1499,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        2,
+        1,
+        1499,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        2,
+        1,
+        1499,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        2,
+        1,
+        1500,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        2,
+        1,
+        1500,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        2,
+        1,
+        1500,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        2,
+        1,
+        1500,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        2,
+        1,
+        1999,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        2,
+        1,
+        1999,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        2,
+        1,
+        1999,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        2,
+        1,
+        1999,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        2,
+        1,
+        2000,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        2,
+        1,
+        2000,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        2,
+        1,
+        2000,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        2,
+        1,
+        2000,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        2,
+        1,
+        2999,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        2,
+        1,
+        2999,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        2,
+        1,
+        2999,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        2,
+        1,
+        2999,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        2,
+        1,
+        3000,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        2,
+        1,
+        3000,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        2,
+        1,
+        3000,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 1,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 1,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        2,
+        1,
+        3000,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 1,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 1,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        2,
+        1,
+        60000,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        2,
+        1,
+        60000,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        2,
+        1,
+        60000,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 1,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 1,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        2,
+        1,
+        60000,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 1,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 1,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        2,
+        5,
+        0,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        2,
+        5,
+        0,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        2,
+        5,
+        0,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        2,
+        5,
+        0,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        2,
+        5,
+        1499,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        2,
+        5,
+        1499,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        2,
+        5,
+        1499,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        2,
+        5,
+        1499,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        2,
+        5,
+        1500,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        2,
+        5,
+        1500,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        2,
+        5,
+        1500,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        2,
+        5,
+        1500,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        2,
+        5,
+        1999,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        2,
+        5,
+        1999,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        2,
+        5,
+        1999,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        2,
+        5,
+        1999,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        2,
+        5,
+        2000,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        2,
+        5,
+        2000,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        2,
+        5,
+        2000,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        2,
+        5,
+        2000,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        2,
+        5,
+        2999,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        2,
+        5,
+        2999,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        2,
+        5,
+        2999,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        2,
+        5,
+        2999,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        2,
+        5,
+        3000,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        2,
+        5,
+        3000,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        2,
+        5,
+        3000,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        2,
+        5,
+        3000,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        2,
+        5,
+        60000,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        2,
+        5,
+        60000,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        2,
+        5,
+        60000,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        2,
+        5,
+        60000,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        3,
+        0,
+        0,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        3,
+        0,
+        0,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        3,
+        0,
+        0,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        3,
+        0,
+        0,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        3,
+        0,
+        1499,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        3,
+        0,
+        1499,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        3,
+        0,
+        1499,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        3,
+        0,
+        1499,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        3,
+        0,
+        1500,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        3,
+        0,
+        1500,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        3,
+        0,
+        1500,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        3,
+        0,
+        1500,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        3,
+        0,
+        1999,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        3,
+        0,
+        1999,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        3,
+        0,
+        1999,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        3,
+        0,
+        1999,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        3,
+        0,
+        2000,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        3,
+        0,
+        2000,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        3,
+        0,
+        2000,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [
+          1
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [
+          1
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        3,
+        0,
+        2000,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [
+          1
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [
+          1
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        3,
+        0,
+        2999,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        3,
+        0,
+        2999,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        3,
+        0,
+        2999,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [
+          1
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [
+          1
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        3,
+        0,
+        2999,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [
+          1
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [
+          1
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        3,
+        0,
+        3000,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        3,
+        0,
+        3000,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        3,
+        0,
+        3000,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [
+          1
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [
+          1
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        3,
+        0,
+        3000,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [
+          1
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [
+          1
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        3,
+        0,
+        60000,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        3,
+        0,
+        60000,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        3,
+        0,
+        60000,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [
+          1
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [
+          1
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        3,
+        0,
+        60000,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [
+          1
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [
+          1
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        3,
+        1,
+        0,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        3,
+        1,
+        0,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        3,
+        1,
+        0,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        3,
+        1,
+        0,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        3,
+        1,
+        1499,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        3,
+        1,
+        1499,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        3,
+        1,
+        1499,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        3,
+        1,
+        1499,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        3,
+        1,
+        1500,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        3,
+        1,
+        1500,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        3,
+        1,
+        1500,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        3,
+        1,
+        1500,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        3,
+        1,
+        1999,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        3,
+        1,
+        1999,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        3,
+        1,
+        1999,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        3,
+        1,
+        1999,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        3,
+        1,
+        2000,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        3,
+        1,
+        2000,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        3,
+        1,
+        2000,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [
+          1
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [
+          1
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        3,
+        1,
+        2000,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [
+          1
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [
+          1
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        3,
+        1,
+        2999,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        3,
+        1,
+        2999,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        3,
+        1,
+        2999,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [
+          1
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [
+          1
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        3,
+        1,
+        2999,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [
+          1
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [
+          1
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        3,
+        1,
+        3000,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        3,
+        1,
+        3000,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        3,
+        1,
+        3000,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [
+          1
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [
+          1
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        3,
+        1,
+        3000,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [
+          1
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [
+          1
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        3,
+        1,
+        60000,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        3,
+        1,
+        60000,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        3,
+        1,
+        60000,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [
+          1
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [
+          1
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        3,
+        1,
+        60000,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [
+          1
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [
+          1
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        3,
+        5,
+        0,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        3,
+        5,
+        0,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        3,
+        5,
+        0,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        3,
+        5,
+        0,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        3,
+        5,
+        1499,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        3,
+        5,
+        1499,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        3,
+        5,
+        1499,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        3,
+        5,
+        1499,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        3,
+        5,
+        1500,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        3,
+        5,
+        1500,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        3,
+        5,
+        1500,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        3,
+        5,
+        1500,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        3,
+        5,
+        1999,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        3,
+        5,
+        1999,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        3,
+        5,
+        1999,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        3,
+        5,
+        1999,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        3,
+        5,
+        2000,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        3,
+        5,
+        2000,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        3,
+        5,
+        2000,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [
+          1
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [
+          1
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        3,
+        5,
+        2000,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [
+          1
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [
+          1
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        3,
+        5,
+        2999,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        3,
+        5,
+        2999,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        3,
+        5,
+        2999,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [
+          1
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [
+          1
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        3,
+        5,
+        2999,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [
+          1
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [
+          1
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        3,
+        5,
+        3000,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        3,
+        5,
+        3000,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        3,
+        5,
+        3000,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [
+          1
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [
+          1
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        3,
+        5,
+        3000,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [
+          1
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [
+          1
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        3,
+        5,
+        60000,
+        0,
+        0
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        3,
+        5,
+        60000,
+        0,
+        1
+      ],
+      "official": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [],
+        "timers": 0,
+        "flag13": 0,
+        "flag14": 1
+      }
+    },
+    {
+      "input": [
+        3,
+        5,
+        60000,
+        1,
+        0
+      ],
+      "official": {
+        "switches": [
+          1
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      },
+      "candidate": {
+        "switches": [
+          1
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 0
+      }
+    },
+    {
+      "input": [
+        3,
+        5,
+        60000,
+        1,
+        1
+      ],
+      "official": {
+        "switches": [
+          1
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      },
+      "candidate": {
+        "switches": [
+          1
+        ],
+        "timers": 1,
+        "flag13": 0,
+        "flag14": 1
+      }
+    }
+  ]
+}

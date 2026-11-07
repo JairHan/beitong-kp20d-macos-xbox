@@ -1,0 +1,18 @@
+{
+  "hardware_access": false,
+  "passed": true,
+  "official_native_frame_comparison": [
+    {
+      "sha256": "6574054de479bb44becf1f7b338d8a05d1190bdae28f8702f463afb1324d11b9",
+      "native_return": 1,
+      "frames_equal": true,
+      "frames": 6656
+    },
+    {
+      "sha256": "b8f9a7e864b0750eda4ebb86af19b19d9a0c09f588ae5178cabc877b3f38857b",
+      "native_return": 1,
+      "frames_equal": true,
+      "frames": 6656
+    }
+  ]
+}

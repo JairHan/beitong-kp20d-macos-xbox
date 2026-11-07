@@ -1,0 +1,52 @@
+[
+  {
+    "event": "start",
+    "utc": "2026-11-07T16:58:12.494303+00:00",
+    "mode": "flash",
+    "image_sha256": "b8f9a7e864b0750eda4ebb86af19b19d9a0c09f588ae5178cabc877b3f38857b",
+    "transport": "native_macos_IOKit",
+    "virtual_machine_used": false,
+    "OpenJoy_used": false
+  },
+  {
+    "event": "connected",
+    "utc": "2026-11-07T16:58:29.696329+00:00",
+    "vid": "20bc",
+    "pid": "5158"
+  },
+  {
+    "event": "preflight_stable",
+    "utc": "2026-11-07T16:58:33.220997+00:00",
+    "seconds": 3.5,
+    "firmware_query_repeated": true
+  },
+  {
+    "event": "segment_success",
+    "utc": "2026-11-07T17:00:36.498466+00:00",
+    "channel": 2,
+    "padded_crc": 35525,
+    "confirmed_blocks": 937,
+    "device_crc_matches": true
+  },
+  {
+    "event": "segment_success",
+    "utc": "2026-11-07T17:01:31.294893+00:00",
+    "channel": 1,
+    "padded_crc": 30447,
+    "confirmed_blocks": 393,
+    "device_crc_matches": true
+  },
+  {
+    "event": "restart_observation",
+    "utc": "2026-11-07T17:01:32.301280+00:00",
+    "usb_disconnect_seen": true
+  },
+  {
+    "event": "success",
+    "utc": "2026-11-07T17:01:32.301853+00:00",
+    "image_sha256": "b8f9a7e864b0750eda4ebb86af19b19d9a0c09f588ae5178cabc877b3f38857b",
+    "both_segments_crc_acknowledged": true,
+    "full_flash_readback_obtained": false,
+    "next_step": "Reconnect to Mac and verify native Xbox enumeration"
+  }
+]

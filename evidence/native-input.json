@@ -1,0 +1,60 @@
+{
+  "sample_changes": 637,
+  "categories": [
+    "Xbox One"
+  ],
+  "axis_ranges": {
+    "LX": {
+      "min": -1.0,
+      "max": 0.99995005,
+      "distinct": 194
+    },
+    "LY": {
+      "min": -1.0,
+      "max": 0.9997656,
+      "distinct": 196
+    },
+    "RX": {
+      "min": -0.99766123,
+      "max": 1.0,
+      "distinct": 87
+    },
+    "RY": {
+      "min": -0.9842025,
+      "max": 0.83460957,
+      "distinct": 96
+    },
+    "LT": {
+      "min": 0.0,
+      "max": 1.0,
+      "distinct": 114
+    },
+    "RT": {
+      "min": 0.0,
+      "max": 1.0,
+      "distinct": 41
+    }
+  },
+  "buttons_seen": {
+    "A": true,
+    "B": true,
+    "X": true,
+    "Y": true,
+    "LB": true,
+    "RB": true,
+    "LS": true,
+    "RS": true,
+    "Menu": true,
+    "Options": true
+  },
+  "dpad_ranges": [
+    [
+      -1.0,
+      1.0
+    ],
+    [
+      -1.0,
+      1.0
+    ]
+  ]
+}

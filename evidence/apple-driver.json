@@ -1,0 +1,15 @@
+[
+  {
+    "IORegistryEntryName": "Xbox360Gamepad",
+    "Product": "BTP-KP20D XINPUT WIRED",
+    "VendorID": 1118,
+    "ProductID": 654,
+    "IOUserServerName": "com.apple.gamecontroller.driver.XboxGamepad",
+    "IOUserClass": "Xbox360Gamepad",
+    "CFBundleIdentifier": "com.apple.gamecontroller.driver.XboxGamepad",
+    "Transport": "USB",
+    "PrimaryUsage": 5,
+    "PrimaryUsagePage": 1,
+    "IOClass": "AppleUserHIDDevice"
+  }
+]
