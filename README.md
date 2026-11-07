@@ -40,6 +40,12 @@ GameController 将手柄分类为 Xbox One，而底层驱动名为 Xbox360Gamepa
 6574054de479bb44becf1f7b338d8a05d1190bdae28f8702f463afb1324d11b9
 ```
 
+## 直接下载已生成的补丁固件
+
+[v2.0.0 Release](https://github.com/JairHan/beitong-kp20d-macos-xbox/releases/tag/v2.0.0) 提供独立附件 `KP20D-nativeXboxUSB-v2.bin` 及 SHA256 校验文件。它与本次在实机刷入、验收的 v2 镜像逐字节一致，340302 字节，SHA256 为 `b8f9a7e864b0750eda4ebb86af19b19d9a0c09f588ae5178cabc877b3f38857b`。
+
+可以直接将其放入 `firmware/`，跳过下方离线生成步骤。刷写工具仍要求同时保留 `firmware/KP20D-official-1.1.1.bin` 并校验其哈希，作为恢复原件。型号限制与验证范围同上；固件附件包含厂商代码，不受工具源码的 MIT 许可授权。
+
 ## 构建和生成固件（离线，不访问手柄）
 
 在仓库根目录执行。文件名中的路径均为本地相对路径。
