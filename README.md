@@ -29,9 +29,32 @@ GameController 将手柄分类为 Xbox One，而底层驱动名为 Xbox360Gamepa
 
 [技术说明](docs/technical.md)列出偏移、ARM 指令和传输流程。版本字符串仍为 **1.1.1**，不能用版本号单独判断是否装了补丁。
 
+## macOS 一键刷写（推荐使用完整包）
+
+从 [v2.1.0 Release](https://github.com/JairHan/beitong-kp20d-macos-xbox/releases/tag/v2.1.0) 下载 `KP20D-OneClick-v2.1.0-macOS-arm64.zip`，**完整解压**到本地可写文件夹，不要只取出 `.command` 文件。
+
+1. 确认已安装 Python 3.9 或更新版本。完整包已包含官方原件、v2 补丁和 Apple Silicon 原生库。
+2. 关闭 OpenJoy 和其他手柄升级工具，只连接一只 BTP-KP20D，USB 连接目标选择 Mac。
+3. 双击 **刷入Xbox补丁.command**，查看检查结果，输入 `YES` 并回车开始。
+4. 保持连接，等待两段 CRC 成功后退出工具，再冷拔插测试原生 Xbox 输入。
+
+需要恢复时双击 **恢复官方固件.command**，同样需要输入 `YES`。恢复会撤销有线兼容补丁；完整恢复路径和断电救砖的验证限制见后文。当前已正常工作的手柄无需重复刷写。
+
+脚本会校验大小、SHA256、CRC 和补丁逆变换，拦截重复运行和已知 OpenJoy 进程，保持刷写期间系统唤醒，并将控制台与刷写日志保存到 `logs/`。取消确认不会打开 USB；失败会停止，不自动从头重刷。仅适用于本项目已验证的固件与型号。
+
+源码下载或包内固件缺失时，会从固定的 v2.0.0 Release 下载官方原件并校验，再离线生成补丁。已有文件损坏时停止，不覆盖原文件。原生库缺失或架构不符时尝试本机编译，因此需要 Xcode Command Line Tools；完整包中 arm64 库能够载入时无需编译。
+
+只准备文件、不访问 USB、不刷写的终端命令：
+
+```sh
+python3 tools/one_click.py --prepare-only
+```
+
+一键入口与下载、失败、取消分支已经离线测试；原固件的硬件验收结果沿用 v2，本次制作脚本没有重新刷写手柄。
+
 ## 准备
 
-- macOS、Python 3.9 或更新版本、Xcode Command Line Tools（`xcode-select --install`）。
+- macOS、Python 3.9 或更新版本；从源码编译原生库时需要 Xcode Command Line Tools（`xcode-select --install`）。
 - USB 数据线直连 Mac，保持供电稳定。关闭 OpenJoy 及其他手柄管理/升级工具。
 - 从 [v2.0.0 Release](https://github.com/JairHan/beitong-kp20d-macos-xbox/releases/tag/v2.0.0) 下载独立附件 `KP20D-official-1.1.1.bin`，或自行从厂商渠道取得对应镜像。该附件是本次使用的未修改官方原件；源码仓库和工具压缩包不包含完整固件。
 - 官方镜像必须为 340302 字节，SHA256：
@@ -106,6 +129,6 @@ make test
 
 ## Release 与许可
 
-Release 提供Apple Silicon（arm64）原生库和源码工具压缩包；库的构建最低部署目标为 macOS 12.0，但仅在 macOS 27.3 实测；其他架构建议在本机运行 `make`。这些工具无需安装常驻服务。原生库未经过 Apple 公证。
+Release 提供Apple Silicon（arm64）原生库和源码工具压缩包；库的构建最低部署目标为 macOS 12.0，但仅在 macOS 27.3 实测；其他架构建议在本机运行 `make`。这些工具无需安装常驻服务。原生库未经过 Apple 公证。v2.1.0 完整一键包包含固件；v2.0.0 工具包中的完整固件仍作为独立附件提供。
 
 本项目自行编写的工具与文档采用 MIT 许可；Release 中的厂商固件原件仅作为本型号的构建输入与恢复备份，版权归原权利人，不受本项目 MIT 许可授权；商标和第三方逆向样本亦不在该许可范围内。本项目与北通、Microsoft、Apple 没有关联。
