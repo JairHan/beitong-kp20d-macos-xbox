@@ -1,4 +1,4 @@
-"""Native macOS KP20D type-21 updater. Pinned images only; no VM or OpenJoy."""
+"""Native macOS KP20D type-21 updater; optional custom container support."""
 import argparse
 import ctypes
 import datetime
@@ -75,15 +75,15 @@ class HID:
             self.lib.kp_close()
             self.closed = True
 
-def query_version(hid):
+def query_version(hid, allow_custom=False):
     hid.write(bytes([2, 0x55]).ljust(64, b'\0'))
     deadline = time.monotonic()+4
     while time.monotonic() < deadline:
         value = hid.read(100)
         if value and value[:2] == b'\2\x55':
-            if tuple(value[2:5]) != (1, 1, 1):
+            if not allow_custom and tuple(value[2:5]) != (1, 1, 1):
                 raise RuntimeError('Unverified firmware revision '+str(tuple(value[2:5])))
-            return {'version': '1.1.1', 'raw': value.hex()}
+            return {'version': '.'.join(str(x) for x in value[2:5]), 'raw': value.hex()}
     raise RuntimeError('No valid official version-query reply; no upgrade commands sent')
 
 def send(hid, channel, operation, payload):
@@ -167,7 +167,17 @@ def transfer(hid, channel, data, journal):
             return
     raise RuntimeError('Final CRC response deadline reached; no automatic full retry')
 
-def inspect_image(data):
+def inspect_custom_image(data):
+    """Validate the known two-channel layout, without asserting firmware identity."""
+    segments = builder.inspect(data)
+    for (_, length), maximum in zip(segments, (100452, 239816)):
+        if length > maximum:
+            raise ValueError('Segment exceeds the verified KP20D payload capacity')
+    return hashlib.sha256(data).hexdigest(), segments
+
+def inspect_image(data, allow_custom=False):
+    if allow_custom:
+        return inspect_custom_image(data)
     digest = hashlib.sha256(data).hexdigest()
     if digest not in (builder.OFFICIAL_SHA, CANDIDATE_SHA):
         raise ValueError('Only the pinned official image or validated v2 candidate is permitted')
@@ -186,25 +196,30 @@ def main():
     group.add_argument('--flash', type=Path)
     parser.add_argument('--journal', type=Path)
     parser.add_argument('--connect-timeout', type=int, default=120)
+    parser.add_argument('--allow-custom', action='store_true', help='Accept a custom KP20D two-segment container and changed version replies')
+    parser.add_argument('--expected-sha256', help='Refuse a file changed after selection/confirmation')
     args = parser.parse_args()
     data, segments, digest = None, None, None
     if args.flash:
         data = args.flash.read_bytes()
-        digest, segments = inspect_image(data)
+        digest, segments = inspect_image(data, allow_custom=True) if args.allow_custom else inspect_image(data)
+        if args.expected_sha256 and digest != args.expected_sha256.lower():
+            raise ValueError('Selected image changed; expected SHA256 mismatch. No device opened.')
     if not args.journal:
         parser.error('--journal is required for device access')
     journal = Journal(args.journal)
     journal.log('start', mode='flash' if args.flash else 'read_only', image_sha256=digest,
-                transport='native_macos_IOKit', virtual_machine_used=False, OpenJoy_used=False)
+                transport='native_macos_IOKit', virtual_machine_used=False, OpenJoy_used=False,
+                custom_firmware_allowed=args.allow_custom)
     hid = HID()
     try:
         print('WAITING for wired KP20D on this Mac. Replug USB to Mac if it is in NS mode.', flush=True)
         journal.log('connected', **hid.connect(args.connect_timeout))
-        journal.log('version', **query_version(hid))
+        journal.log('version', **query_version(hid, allow_custom=args.allow_custom))
         hid.pump(3500)
         if hid.disconnected():
             raise RuntimeError('Connection did not remain stable past the mode-detection window; no upgrade commands sent')
-        journal.log('version', **query_version(hid))
+        journal.log('version', **query_version(hid, allow_custom=args.allow_custom))
         journal.log('preflight_stable', seconds=3.5, firmware_query_repeated=True)
         if args.inspect:
             journal.log('success', read_only=True, firmware_write_performed=False)

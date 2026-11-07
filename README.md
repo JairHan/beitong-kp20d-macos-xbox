@@ -29,6 +29,26 @@ GameController 将手柄分类为 Xbox One，而底层驱动名为 Xbox360Gamepa
 
 [技术说明](docs/technical.md)列出偏移、ARM 指令和传输流程。版本字符串仍为 **1.1.1**，不能用版本号单独判断是否装了补丁。
 
+## 选择自己修改的 BIN 刷写（v2.2.0）
+
+下载 [v2.2.0 完整包](https://github.com/JairHan/beitong-kp20d-macos-xbox/releases/tag/v2.2.0)，完整解压后双击 **刷写BIN固件.command**，在文件选择框中选择自己修改的固件。工具显示路径、SHA256 和分段大小，输入 `YES` 后刷写。
+
+此入口**不限制为官方或 v2 补丁的固定哈希**，也不要求下载官方原件。可选择自制 BIN 或自己备份的官方 BIN；仍校验容器头、分段布局、CRC，以及已验证的分段长度上限（segment 0 ≤ 100452 字节，segment 1 ≤ 239816 字节）。**仅支持 KP20D 现有的双段升级容器，不支持任意型号固件、裸 Flash 导出或仅一个固件段。** 修改 payload 后必须同步更新容器与分段 CRC；校验失败不会自动修复或刷写。
+
+容器校验不能证明代码兼容、启动正常或属于正确型号。自制固件若改掉 USB 产品名前缀、受支持的 VID/PID、维护 HID 接口或升级协议，工具可能无法再次连接，无法保证能恢复。当前支持 BTP-KP20D 产品名前缀，20bc:5158 或 045e:028e 身份，以及原有厂商维护 HID。收到版本查询应答即可记录版本，不再限定设备必须报告 1.1.1，便于在修改版本号后恢复官方固件。
+
+**恢复官方固件.command** 独立校验并刷入包内官方原件，不依赖 v2 补丁文件是否存在或已被修改。它仍要求手柄维护接口能够正常响应，不能作为变砖后的救砖保证。**刷入Xbox补丁.command** 则保留为刷固定 v2 补丁的便捷入口。
+
+终端也可以直接指定文件，含空格的路径请加引号：
+
+```sh
+python3 tools/one_click.py --image "/path/to/my modified firmware.bin"
+# 只检查所选 BIN 与准备工具，不访问 USB、不刷写：
+python3 tools/one_click.py --image "/path/to/my modified firmware.bin" --prepare-only
+```
+
+底层命令行工具默认仍限制已知镜像；自制容器需显式使用 `--allow-custom`。确认后再次校验选择的 SHA256，文件被替换时停止。日志会记录镜像哈希、设备版本和每段传输结果。传输校验通过不等同于新固件运行正确，本次新增入口未再次实机刷写。
+
 ## macOS 一键刷写（推荐使用完整包）
 
 从 [v2.1.0 Release](https://github.com/JairHan/beitong-kp20d-macos-xbox/releases/tag/v2.1.0) 下载 `KP20D-OneClick-v2.1.0-macOS-arm64.zip`，**完整解压**到本地可写文件夹，不要只取出 `.command` 文件。
@@ -47,7 +67,7 @@ GameController 将手柄分类为 Xbox One，而底层驱动名为 Xbox360Gamepa
 只准备文件、不访问 USB、不刷写的终端命令：
 
 ```sh
-python3 tools/one_click.py --prepare-only
+python3 tools/one_click.py --mode patch --prepare-only
 ```
 
 一键入口与下载、失败、取消分支已经离线测试；原固件的硬件验收结果沿用 v2，本次制作脚本没有重新刷写手柄。
@@ -107,7 +127,7 @@ python3 tools/native_updater.py --flash firmware/KP20D-nativeXboxUSB-v2.bin --jo
 
 成功结束后，退出工具并重新插入 USB。确认 OpenJoy 未运行，再在 macOS 游戏控制器设置及实际游戏中验证全部输入。正常使用无需运行本项目工具。
 
-工具只选择产品名前缀 `BTP-KP20D`、指定 VID/PID 和厂商 HID usage。**一次只连接一只目标手柄**；这些筛选无法识别所有硬件修订。
+无论固定补丁还是自制 BIN，工具只选择产品名前缀 `BTP-KP20D`、指定 VID/PID 和厂商 HID usage。**一次只连接一只目标手柄**；这些筛选无法识别所有硬件修订。
 
 ## 恢复官方固件
 
@@ -129,6 +149,6 @@ make test
 
 ## Release 与许可
 
-Release 提供Apple Silicon（arm64）原生库和源码工具压缩包；库的构建最低部署目标为 macOS 12.0，但仅在 macOS 27.3 实测；其他架构建议在本机运行 `make`。这些工具无需安装常驻服务。原生库未经过 Apple 公证。v2.1.0 完整一键包包含固件；v2.0.0 工具包中的完整固件仍作为独立附件提供。
+Release 提供Apple Silicon（arm64）原生库和源码工具压缩包；库的构建最低部署目标为 macOS 12.0，但仅在 macOS 27.3 实测；其他架构建议在本机运行 `make`。这些工具无需安装常驻服务。原生库未经过 Apple 公证。v2.1.0 及更新的完整一键包包含固件；v2.0.0 工具包中的完整固件仍作为独立附件提供。
 
 本项目自行编写的工具与文档采用 MIT 许可；Release 中的厂商固件原件仅作为本型号的构建输入与恢复备份，版权归原权利人，不受本项目 MIT 许可授权；商标和第三方逆向样本亦不在该许可范围内。本项目与北通、Microsoft、Apple 没有关联。

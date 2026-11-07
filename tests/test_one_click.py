@@ -71,6 +71,19 @@ class OneClickTests(unittest.TestCase):
             build.assert_called_once_with(original)
             request.assert_not_called()
 
+    def test_restore_does_not_depend_on_patch_file(self):
+        original = b'official'
+        with tempfile.TemporaryDirectory() as folder, patch.object(o, 'IMAGE_SIZE', 8), \
+                patch.object(o, 'OFFICIAL_SHA', hashlib.sha256(original).hexdigest()), \
+                patch.object(o.builder, 'inspect'), patch.object(o.builder, 'build') as build:
+            root = Path(folder)
+            o.save_new(root / 'firmware/KP20D-official-1.1.1.bin', original)
+            o.save_new(root / 'firmware/KP20D-nativeXboxUSB-v2.bin', b'locally modified')
+            official, patched = o.prepare_images(root, include_patch=False)
+            self.assertEqual(official.read_bytes(), original)
+            self.assertIsNone(patched)
+            build.assert_not_called()
+
     def run_main(self, args, answer='YES', result=0, tty=True, failure=None):
         with tempfile.TemporaryDirectory() as folder:
             root = Path(folder)
@@ -85,9 +98,9 @@ class OneClickTests(unittest.TestCase):
                     patch.object(o.subprocess, 'run', return_value=subprocess.CompletedProcess([], result)) as run:
                 if failure:
                     with self.assertRaises(failure):
-                        o.main(args)
+                        o.main(['--mode', 'patch'] + args)
                 else:
-                    self.assertEqual(o.main(args), 0)
+                    self.assertEqual(o.main(['--mode', 'patch'] + args), 0)
                 return run.call_args_list, official, patched
 
     def test_prepare_only_never_launches_updater(self):
